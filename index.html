@@ -22,14 +22,15 @@
             display: flex;
             justify-content: flex-end;
             background: none;
+            font-size: 0.9em;
         }
         nav ul li {
-            margin: 0 15px;
+            margin: 0 10px;
         }
         nav ul li a {
             text-decoration: none;
             color: #333;
-            padding: 10px 20px;
+            padding: 10px 15px;
             display: block;
             font-weight: 500;
         }
@@ -40,18 +41,22 @@
             max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
+            display: flex;
+            align-items: center;
         }
         .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 auto;
-            display: block;
+            margin-right: 20px;
         }
         .intro {
-            text-align: center;
-            margin-top: 20px;
+            text-align: left;
+            flex: 1;
+        }
+        .projects {
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -74,8 +79,14 @@
         </div>
     </div>
 
+    <div class="projects container">
+        <h2>Projects Overview</h2>
+        <!-- Project overviews can be added here -->
+    </div>
+
 </body>
 </html>
+
 
 
 
