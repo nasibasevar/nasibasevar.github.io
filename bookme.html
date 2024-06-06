@@ -3,13 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookMe</title>
+    <title>Book Me</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        nav {
+            border-bottom: 1px solid #000;
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        nav ul {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.9em;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            display: block;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            color: #555;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+            color: #000;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>FOR CONSULTATION, BOOK ME HERE:</h1>
-    <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/nasibasds/expert-consultation" style="min-width:320px;height:630px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    <!-- Calendly inline widget end -->
+    <nav>
+        <ul>
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#about">about</a></li>
+            <li><a href="index.html#projects">projects</a></li>
+            <li><a href="bookme.html">bookme</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>FOR CONSULTATION, BOOK ME HERE:</h1>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/nasibasds/expert-consultation" style="min-width:320px;height:630px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+    </div>
 </body>
 </html>
